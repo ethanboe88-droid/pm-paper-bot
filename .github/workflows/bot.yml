@@ -1,0 +1,49 @@
+name: Prediction market paper bot
+
+on:
+  schedule:
+    - cron: "17 15 * * *"   # full run with AI, daily ~7:17am Pacific
+    - cron: "43 * * * *"    # light run every hour: settle + FLB, no AI cost
+  workflow_dispatch:          # "Run workflow" button for manual runs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pm-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Settle, scan, report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_MARKETS_PER_RUN: ${{ vars.MAX_MARKETS_PER_RUN || '8' }}
+          MIN_EDGE: ${{ vars.MIN_EDGE || '0.08' }}
+          MODEL: ${{ vars.MODEL || 'claude-sonnet-5-5' }}
+          MIN_VOLUME_24H: ${{ vars.MIN_VOLUME_24H || '50000' }}
+          FLB_ENABLED: ${{ vars.FLB_ENABLED || '1' }}
+          FLB_MAX_PER_RUN: ${{ vars.FLB_MAX_PER_RUN || '1' }}
+          STARTING_BANKROLL: ${{ vars.STARTING_BANKROLL || '100000' }}
+          STAKE_PER_TRADE: ${{ vars.STAKE_PER_TRADE || '20' }}
+        run: |
+          if [ "${{ github.event.schedule }}" = "43 * * * *" ]; then
+            python bot.py light
+          else
+            python bot.py run
+          fi
+      - name: Save results to repo
+        run: |
+          git config user.name "pm-bot"
+          git config user.email "pm-bot@users.noreply.github.com"
+          git add data/ REPORT.md
+          git diff --cached --quiet || git commit -m "bot run $(date -u +%F)"
+          git pull --rebase || true
+          git push
