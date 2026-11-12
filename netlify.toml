@@ -1,0 +1,6 @@
+# Netlify serves only the dashboard (index.html). The page pulls live data from GitHub,
+# so skip rebuilds when only the bot's hourly data commits change.
+[build]
+  publish = "."
+  command = ""
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- index.html netlify.toml"
