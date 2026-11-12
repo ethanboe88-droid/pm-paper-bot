@@ -2,3 +2,6 @@ id,strategy,ts,ticker,question,side,price,contracts,cost,fee,model_p,market_mid,
 KXCEONVDA-01JAN33-01DEC26-1794450117,ai,2026-11-12T02:21:57+00:00,KXCEONVDA-01JAN33-01DEC26,"Will Jensen Huang leave as Nvidia CEO before Dec 1, 2026?",NO,0.13,153,19.89,1.22,0.55,0.875,0.32,lost,0.0,-21.11,2026-11-12T17:03:01+00:00
 KXNEXTTEAMNFL-26ARODGERS8-NONE-flb-1794450128,flb,2026-11-12T02:22:08+00:00,KXNEXTTEAMNFL-26ARODGERS8-NONE,What will be Aaron Rodgers's next team? — Retires / No Team,NO,0.97,20,19.4,0.05,,0.035,,open,,,
 KXHEGSETHOUT-26AUG-26DEC01-flb-1794502981,flb,2026-11-12T17:03:01+00:00,KXHEGSETHOUT-26AUG-26DEC01,"Will Pete Hegseth be out as Secretary of Defense before Dec 1, 2026?",NO,0.95,21,19.95,0.07,,0.055,,open,,,
+KXLAGOVISITCOUNT-26NOV-5-1794520314,ai,2026-11-12T21:51:54+00:00,KXLAGOVISITCOUNT-26NOV-5,How many times will Donald Trump visit Mar-a-Lago in Nov 2026? — 5 or more,NO,0.14,142,19.88,1.2,0.02,0.865,0.84,open,,,
+KXRT-FOC-50-1794520354,ai,2026-11-12T21:52:34+00:00,KXRT-FOC-50,Focker-In-Law Rotten Tomatoes score? — Above 50,NO,0.2,99,19.8,1.11,0.48,0.805,0.32,open,,,
+KXNVDACEODATE-27-26DEC01-flb-1794520366,flb,2026-11-12T21:52:46+00:00,KXNVDACEODATE-27-26DEC01,"Will NVIDIA announce its next permanent CEO before Dec 1, 2026?",NO,0.96,20,19.2,0.06,,0.06,,open,,,
