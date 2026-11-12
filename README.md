@@ -1,5 +1,7 @@
 # Prediction Market Paper Bot
 
+**Live dashboard:** https://ethanboe88-droid.github.io/pm-paper-bot/
+
 Claude forecasts live Kalshi markets and paper-trades the ones it disagrees with. **No real money and no Kalshi account.** It uses only Kalshi's public market data.
 
 ## How it works
