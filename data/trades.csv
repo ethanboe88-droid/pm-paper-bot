@@ -1,0 +1,3 @@
+id,strategy,ts,ticker,question,side,price,contracts,cost,fee,model_p,market_mid,edge,status,payout,pnl,settled_ts
+KXCEONVDA-01JAN33-01DEC26-1794450117,ai,2026-11-12T02:21:57+00:00,KXCEONVDA-01JAN33-01DEC26,"Will Jensen Huang leave as Nvidia CEO before Dec 1, 2026?",NO,0.13,153,19.89,1.22,0.55,0.875,0.32,open,,,
+KXNEXTTEAMNFL-26ARODGERS8-NONE-flb-1794450128,flb,2026-11-12T02:22:08+00:00,KXNEXTTEAMNFL-26ARODGERS8-NONE,What will be Aaron Rodgers's next team? — Retires / No Team,NO,0.97,20,19.4,0.05,,0.035,,open,,,
