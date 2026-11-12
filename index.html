@@ -64,6 +64,21 @@
   .swatch { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
   .pos { color: var(--good); } .neg { color: var(--bad); }
 
+  /* bankroll */
+  .bank { margin-bottom: 14px; }
+  .bank-rows { display: grid; gap: 18px; }
+  .bank-row .hdr { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 10px; }
+  .bank-row .name { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; }
+  .bank-row .eq { font-family: var(--mono); font-size: 24px; font-weight: 700; }
+  .bank-row .eq small { font-size: 13px; font-weight: 500; margin-left: 8px; }
+  .stack { display: flex; height: 14px; border-radius: 7px; overflow: hidden; background: var(--grid); gap: 2px; }
+  .stack > div { height: 100%; min-width: 0; transition: width .6s; }
+  .bank-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-top: 12px; }
+  .bank-stats .s { background: var(--surface-1); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .bank-stats .k { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; display: flex; align-items: center; gap: 6px; }
+  .bank-stats .v { font-family: var(--mono); font-size: 16px; font-weight: 700; margin-top: 4px; }
+  td .subt { display: block; font-size: 11px; color: var(--text-muted); }
+
   /* versus */
   .vs { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; text-align: center; margin: 6px 0 14px; }
   .vs .who { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); }
@@ -152,6 +167,12 @@
 
   <section class="grid kpis" id="kpis"></section>
 
+  <section class="card bank" id="bank-card">
+    <h2>Paper bankroll</h2>
+    <p class="hint">Each strategy started with its own fake $100,000. Bar = cash available vs. money out on open trades.</p>
+    <div class="bank-rows" id="bank"></div>
+  </section>
+
   <section class="grid two">
     <div class="card" id="pnl-card">
       <h2>Cumulative P&amp;L</h2>
@@ -189,7 +210,7 @@
       </div>
     </div>
     <div class="tablewrap"><table id="trades"><thead><tr>
-      <th>Opened</th><th>Strategy</th><th>Market</th><th>Side</th><th class="num">Price</th><th class="num">AI</th><th class="num">Mkt</th><th class="num">Cost</th><th class="num">Fee</th><th>Status</th><th class="num">P&amp;L</th>
+      <th>Opened</th><th>Strategy</th><th>Market</th><th>Side</th><th class="num">Price</th><th class="num">AI</th><th class="num">Mkt</th><th class="num">Contracts</th><th class="num">Wagered</th><th class="num">Pays if win</th><th>Status</th><th class="num">P&amp;L</th>
     </tr></thead><tbody></tbody></table></div>
     <div style="text-align:center;margin-top:12px"><button class="btn" id="more" style="display:none"></button></div>
   </section>
@@ -291,8 +312,44 @@ function brier() {
 }
 
 /* ---------- render ---------- */
+function renderBank() {
+  const box = document.getElementById("bank"); box.replaceChildren();
+  ["ai", "flb"].forEach(k => {
+    const s = stats(k);
+    const equity = START_BANKROLL + s.realized;           // cash + money out (open trades at cost)
+    const cash = equity - s.openCost;
+    const wagered = d3.sum(s.ts, t => (num(t.cost) || 0) + (num(t.fee) || 0));
+    const potential = d3.sum(s.open, t => num(t.contracts) || 0);
+    const row = el("div", "bank-row");
+    const hdr = el("div", "hdr");
+    const nm = el("div", "name"); const sw = el("i", "swatch"); sw.style.background = COLORS[k]; nm.append(sw, NAMES[k]);
+    const eq = el("div", "eq", fmt$(equity));
+    const ch = el("small", s.realized > 0 ? "pos" : s.realized < 0 ? "neg" : "", fmtSigned(s.realized) + " (" + (s.realized / START_BANKROLL * 100).toFixed(2) + "%)");
+    eq.appendChild(ch); hdr.append(nm, eq); row.appendChild(hdr);
+    const stack = el("div", "stack");
+    const out = el("div"); out.style.width = Math.max(s.openCost > 0 ? 0.6 : 0, s.openCost / equity * 100) + "%"; out.style.background = COLORS[k];
+    const c = el("div"); c.style.flex = "1"; c.style.background = "#2b3037";
+    [out, c].forEach((seg, i) => {
+      seg.addEventListener("pointermove", ev => showTip(ev, NAMES[k], [["Money out on trades", fmt$(s.openCost), COLORS[k]], ["Cash available", fmt$(cash)], ["Share at risk", (s.openCost / equity * 100).toFixed(2) + "%"]]));
+      seg.addEventListener("pointerleave", hideTip);
+    });
+    stack.append(out, c); row.appendChild(stack);
+    const st = el("div", "bank-stats");
+    const stat = (label, val, color, cls) => { const d = el("div", "s"); const kk = el("div", "k"); if (color) { const w = el("i", "swatch"); w.style.background = color; kk.appendChild(w); } kk.append(label); d.append(kk, el("div", "v " + (cls || ""), val)); return d; };
+    st.append(
+      stat("Cash available", fmt$(cash), "#2b3037"),
+      stat("Money out now", fmt$(s.openCost), COLORS[k]),
+      stat("Open trades pay up to", fmt$(potential)),
+      stat("Avg bet size", s.ts.length ? fmt$(wagered / s.ts.length) : "—"),
+      stat("Total wagered", fmt$(wagered)),
+    );
+    row.appendChild(st);
+    box.appendChild(row);
+  });
+}
+
 function render() {
-  renderKpis(); renderVs(); renderPnl(); renderCalib(); renderBuckets(); renderTrades(); renderFeed();
+  renderBank(); renderKpis(); renderVs(); renderPnl(); renderCalib(); renderBuckets(); renderTrades(); renderFeed();
 }
 
 function kpi(label, val, foot, cls, color) {
@@ -461,7 +518,7 @@ function renderTrades() {
   if (STATE.statusTab === "settled") rows = rows.filter(t => t.status !== "open");
   document.getElementById("trade-count").textContent = `${rows.length} of ${STATE.trades.length} trades`;
   if (!rows.length) {
-    const tr = el("tr"); const td = el("td", null, "No trades match this filter yet."); td.colSpan = 11; td.style.color = "var(--text-muted)"; td.style.textAlign = "center"; td.style.padding = "28px"; tr.appendChild(td); tbody.appendChild(tr); return;
+    const tr = el("tr"); const td = el("td", null, "No trades match this filter yet."); td.colSpan = 12; td.style.color = "var(--text-muted)"; td.style.textAlign = "center"; td.style.padding = "28px"; tr.appendChild(td); tbody.appendChild(tr); return;
   }
   rows.slice(0, STATE.show).forEach(t => {
     const tr = el("tr");
@@ -473,8 +530,10 @@ function renderTrades() {
     tr.appendChild(el("td", "num", (num(t.price) * 100).toFixed(0) + "¢"));
     tr.appendChild(el("td", "num", t.model_p ? pct(num(t.model_p)) : "—"));
     tr.appendChild(el("td", "num", pct(num(t.market_mid))));
-    tr.appendChild(el("td", "num", fmt$(num(t.cost))));
-    tr.appendChild(el("td", "num", fmt$(num(t.fee))));
+    const wag = (num(t.cost) || 0) + (num(t.fee) || 0), pays = num(t.contracts) || 0;
+    tr.appendChild(el("td", "num", String(pays)));
+    const wtd = el("td", "num", fmt$(wag)); wtd.appendChild(el("span", "subt", "incl. " + fmt$(num(t.fee)) + " fee")); tr.appendChild(wtd);
+    const ptd = el("td", "num", fmt$(pays)); ptd.appendChild(el("span", "subt " + (t.status === "lost" ? "" : "pos"), "profit " + fmtSigned(pays - wag))); tr.appendChild(ptd);
     const stc = el("td"); stc.appendChild(el("span", "pill " + t.status, t.status === "won" ? "✓ WON" : t.status === "lost" ? "✕ LOST" : t.status.toUpperCase())); tr.appendChild(stc);
     const p = num(t.pnl); tr.appendChild(el("td", "num " + (p > 0 ? "pos" : p < 0 ? "neg" : ""), p == null ? "—" : fmtSigned(p)));
     tbody.appendChild(tr);
