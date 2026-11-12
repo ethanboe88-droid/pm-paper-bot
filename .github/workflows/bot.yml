@@ -25,7 +25,7 @@ jobs:
       - name: Settle, scan, report
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MAX_MARKETS_PER_RUN: ${{ vars.MAX_MARKETS_PER_RUN || '8' }}
+          MAX_MARKETS_PER_RUN: ${{ vars.MAX_MARKETS_PER_RUN || '25' }}
           MIN_EDGE: ${{ vars.MIN_EDGE || '0.08' }}
           MODEL: ${{ vars.MODEL || 'claude-sonnet-5-5' }}
           MIN_VOLUME_24H: ${{ vars.MIN_VOLUME_24H || '10000' }}

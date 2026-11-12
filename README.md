@@ -8,7 +8,7 @@ Claude forecasts live Kalshi markets and paper-trades the ones it disagrees with
 
 Steps:
 1. **Settle:** checks Kalshi for resolved markets and scores past predictions and trades.
-2. **Scan:** finds up to 8 markets with **$50K+ traded in the last 24h** and a spread of 4c or less, that close in 1–21 days. Claude researches each one with web search (prediction market sites are blocked) and gives a probability **without seeing the market price**.
+2. **Scan:** finds up to 25 markets with **$50K+ traded in the last 24h** and a spread of 4c or less, that close in 1–21 days. Claude researches each one with web search (prediction market sites are blocked) and gives a probability **without seeing the market price**.
 3. **Trade:** if Claude's number beats the price by 8+ points, it buys $20 of YES or NO at the ask, paying Kalshi's taker fee. **Longshot rule:** anything priced under 15c needs a 10+ point edge.
 4. **Benchmark strategy (no AI, free):** "Fade the longshot" buys NO on up to 10 liquid markets priced 3–15c YES. This is based on Kalshi research showing cheap contracts lose most of their money. It has its own $1,000 fake bankroll, so you can see whether the AI beats a dumb rule.
 5. **Report:** writes `REPORT.md` with P&L, win rate, ROI, calibration, and **Brier score of AI vs. market**. The Brier score is the stat that matters.
@@ -27,7 +27,7 @@ Set these under **Settings → Secrets and variables → Actions → Variables**
 
 | Variable | Default | What it does |
 |---|---|---|
-| `MAX_MARKETS_PER_RUN` | 8 | Markets checked per day. This is the main cost lever. |
+| `MAX_MARKETS_PER_RUN` | 25 | Markets checked per day. This is the main cost lever. |
 | `MIN_EDGE` | 0.08 | How far Claude has to disagree with the price before it trades |
 | `MODEL` | claude-sonnet-5-5 | Change to `claude-haiku-5-5` for a cheaper test |
 | `MIN_VOLUME_24H` | 10000 | Minimum 24h volume (≈ dollars). Lower it if the log says 0 markets were picked. |
