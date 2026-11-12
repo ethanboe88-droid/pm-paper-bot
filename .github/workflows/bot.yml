@@ -28,7 +28,7 @@ jobs:
           MAX_MARKETS_PER_RUN: ${{ vars.MAX_MARKETS_PER_RUN || '8' }}
           MIN_EDGE: ${{ vars.MIN_EDGE || '0.08' }}
           MODEL: ${{ vars.MODEL || 'claude-sonnet-5-5' }}
-          MIN_VOLUME_24H: ${{ vars.MIN_VOLUME_24H || '50000' }}
+          MIN_VOLUME_24H: ${{ vars.MIN_VOLUME_24H || '10000' }}
           FLB_ENABLED: ${{ vars.FLB_ENABLED || '1' }}
           FLB_MAX_PER_RUN: ${{ vars.FLB_MAX_PER_RUN || '1' }}
           STARTING_BANKROLL: ${{ vars.STARTING_BANKROLL || '100000' }}

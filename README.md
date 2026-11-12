@@ -30,7 +30,7 @@ Set these under **Settings → Secrets and variables → Actions → Variables**
 | `MAX_MARKETS_PER_RUN` | 8 | Markets checked per day. This is the main cost lever. |
 | `MIN_EDGE` | 0.08 | How far Claude has to disagree with the price before it trades |
 | `MODEL` | claude-sonnet-5-5 | Change to `claude-haiku-5-5` for a cheaper test |
-| `MIN_VOLUME_24H` | 50000 | Minimum 24h volume (≈ dollars). Lower it if the log says 0 markets were picked. |
+| `MIN_VOLUME_24H` | 10000 | Minimum 24h volume (≈ dollars). Lower it if the log says 0 markets were picked. |
 | `STARTING_BANKROLL` | 100000 | Fake bankroll per strategy |
 | `STAKE_PER_TRADE` | 20 | Fake $ per trade |
 | `FLB_MAX_PER_RUN` | 1 | Longshot trades per run (25 runs/day = 25 max/day) |
