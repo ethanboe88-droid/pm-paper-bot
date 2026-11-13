@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-13 11:32 UTC
+# Prediction Market Paper Bot — 2026-11-13 18:44 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,15 +15,15 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 6 | Cash: $99,882.58 of $100,000
-- Kalshi fees paid: $0.49 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 7 | Cash: $99,863.05 of $100,000
+- Kalshi fees paid: $0.66 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 1 resolved predictions:
+Brier score (lower = better), 2 resolved predictions:
 
-- AI: **0.2025**
-- Market: **0.0156**
+- AI: **0.1193**
+- Market: **0.0331**
 - Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
@@ -31,6 +31,7 @@ Brier score (lower = better), 1 resolved predictions:
 | AI said | Count | Actually YES |
 |---|---|---|
 | 40–60% | 1 | 100% |
+| 80–100% | 1 | 100% |
 
 Total AI predictions logged: 10
 
@@ -38,6 +39,7 @@ Total AI predictions logged: 10
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-13 | flb | Will Jensen Huang testify in front of Congress before D | NO | 0.88 | - | 0.12 | open | - |
 | 2026-11-13 | flb | Hexed Rotten Tomatoes score? — Above 90 | NO | 0.95 | - | 0.06 | open | - |
 | 2026-11-13 | flb | Will BTC trimmed mean be below $57500.00 by 11:59 PM ET | NO | 0.92 | - | 0.09 | open | - |
 | 2026-11-12 | flb | Will BTC trimmed mean be above $82500.00 by 11:59 PM ET | NO | 0.91 | - | 0.10 | open | - |
