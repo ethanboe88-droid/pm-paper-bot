@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-14 19:57 UTC
+# Prediction Market Paper Bot — 2026-11-14 23:22 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 12 | Cash: $99,766.00 of $100,000
-- Kalshi fees paid: $1.29 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 13 | Cash: $99,746.37 of $100,000
+- Kalshi fees paid: $1.32 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
@@ -39,6 +39,7 @@ Total AI predictions logged: 17
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-14 | flb | Will BTC trimmed mean be above $85000.00 by 11:59 PM ET | NO | 0.98 | - | 0.03 | open | - |
 | 2026-11-14 | ai | Will it be confirmed that a software or configuration e | NO | 0.40 | 0.35 | 0.61 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that accidental damage to a cable, | NO | 0.92 | - | 0.09 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that human error caused the FAA's  | NO | 0.87 | - | 0.14 | open | - |
