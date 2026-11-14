@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-13 21:27 UTC
+# Prediction Market Paper Bot — 2026-11-14 00:27 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 8 | Cash: $99,843.81 of $100,000
-- Kalshi fees paid: $0.79 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 9 | Cash: $99,824.18 of $100,000
+- Kalshi fees paid: $0.89 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
@@ -39,6 +39,7 @@ Total AI predictions logged: 15
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-14 | flb | Will it be confirmed that a problem with the FAA's SMAR | NO | 0.93 | - | 0.07 | open | - |
 | 2026-11-13 | flb | Will the unemployment rate (U-3) be above 4.2% in Novem | NO | 0.91 | - | 0.10 | open | - |
 | 2026-11-13 | ai | Will Jensen Huang talk to Trump before Dec 1, 2026? | YES | 0.42 | 0.55 | 0.40 | open | - |
 | 2026-11-13 | ai | Will Howard Lutnick be out as Commerce Secretary before | NO | 0.57 | 0.25 | 0.43 | open | - |
