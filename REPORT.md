@@ -1,12 +1,12 @@
-# Prediction Market Paper Bot — 2026-11-14 19:27 UTC
+# Prediction Market Paper Bot — 2026-11-14 19:57 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
 - Realized P&L: **$-21.11** (ROI -100.0% on $21 risked)
-- Settled: 1 (won 0, 0%) | Open: 4 | Cash: $99,895.79 of $100,000
-- Kalshi fees paid: $4.95 (included in all P&L above)
+- Settled: 1 (won 0, 0%) | Open: 5 | Cash: $99,875.36 of $100,000
+- Kalshi fees paid: $5.78 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -33,12 +33,13 @@ Brier score (lower = better), 3 resolved predictions:
 | 40–60% | 1 | 100% |
 | 80–100% | 2 | 100% |
 
-Total AI predictions logged: 15
+Total AI predictions logged: 17
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-14 | ai | Will it be confirmed that a software or configuration e | NO | 0.40 | 0.35 | 0.61 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that accidental damage to a cable, | NO | 0.92 | - | 0.09 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that human error caused the FAA's  | NO | 0.87 | - | 0.14 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that an error by an AI system or A | NO | 0.92 | - | 0.09 | open | - |
