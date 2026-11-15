@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-15 11:28 UTC
+# Prediction Market Paper Bot — 2026-11-15 17:58 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -20,10 +20,10 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 3 resolved predictions:
+Brier score (lower = better), 4 resolved predictions:
 
-- AI: **0.0929**
-- Market: **0.0312**
+- AI: **0.1003**
+- Market: **0.0614**
 - Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
@@ -31,6 +31,7 @@ Brier score (lower = better), 3 resolved predictions:
 | AI said | Count | Actually YES |
 |---|---|---|
 | 40–60% | 1 | 100% |
+| 60–80% | 1 | 100% |
 | 80–100% | 2 | 100% |
 
 Total AI predictions logged: 17
