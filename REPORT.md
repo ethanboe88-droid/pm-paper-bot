@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-15 03:03 UTC
+# Prediction Market Paper Bot — 2026-11-15 11:28 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 14 | Cash: $99,727.11 of $100,000
-- Kalshi fees paid: $1.38 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 15 | Cash: $99,707.66 of $100,000
+- Kalshi fees paid: $1.43 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
@@ -39,6 +39,7 @@ Total AI predictions logged: 17
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-15 | flb | Will BTC trimmed mean be above $90000.00 by 11:59 PM ET | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-15 | flb | Will BTC trimmed mean be above $87500.00 by 11:59 PM ET | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-14 | flb | Will BTC trimmed mean be above $85000.00 by 11:59 PM ET | NO | 0.98 | - | 0.03 | open | - |
 | 2026-11-14 | ai | Will it be confirmed that a software or configuration e | NO | 0.40 | 0.35 | 0.61 | open | - |
@@ -58,4 +59,3 @@ Total AI predictions logged: 17
 | 2026-11-12 | ai | How many times will Donald Trump visit Mar-a-Lago in No | NO | 0.14 | 0.02 | 0.86 | open | - |
 | 2026-11-12 | flb | Will Pete Hegseth be out as Secretary of Defense before | NO | 0.95 | - | 0.06 | open | - |
 | 2026-11-12 | flb | What will be Aaron Rodgers's next team? — Retires / No  | NO | 0.97 | - | 0.04 | open | - |
-| 2026-11-12 | ai | Will Jensen Huang leave as Nvidia CEO before Dec 1, 202 | NO | 0.13 | 0.55 | 0.88 | lost | -21.11 |
