@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-16 12:00 UTC
+# Prediction Market Paper Bot — 2026-11-16 22:29 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 16 | Cash: $99,688.03 of $100,000
-- Kalshi fees paid: $1.46 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 17 | Cash: $99,668.77 of $100,000
+- Kalshi fees paid: $1.52 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
@@ -40,6 +40,7 @@ Total AI predictions logged: 18
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-16 | flb | The RSM Classic: Jackson Koivun wins | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-16 | flb | Will the President sign more than 4 Executive Orders be | NO | 0.98 | - | 0.03 | open | - |
 | 2026-11-15 | flb | Will BTC trimmed mean be above $90000.00 by 11:59 PM ET | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-15 | flb | Will BTC trimmed mean be above $87500.00 by 11:59 PM ET | NO | 0.96 | - | 0.04 | open | - |
@@ -59,4 +60,3 @@ Total AI predictions logged: 18
 | 2026-11-12 | flb | Will NVIDIA announce its next permanent CEO before Dec  | NO | 0.96 | - | 0.06 | open | - |
 | 2026-11-12 | ai | Focker-In-Law Rotten Tomatoes score? — Above 50 | NO | 0.20 | 0.48 | 0.81 | open | - |
 | 2026-11-12 | ai | How many times will Donald Trump visit Mar-a-Lago in No | NO | 0.14 | 0.02 | 0.86 | open | - |
-| 2026-11-12 | flb | Will Pete Hegseth be out as Secretary of Defense before | NO | 0.95 | - | 0.06 | open | - |
