@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-17 14:52 UTC
+# Prediction Market Paper Bot — 2026-11-17 22:54 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 20 | Cash: $99,610.67 of $100,000
-- Kalshi fees paid: $1.68 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 21 | Cash: $99,590.66 of $100,000
+- Kalshi fees paid: $1.76 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
@@ -34,12 +34,13 @@ Brier score (lower = better), 4 resolved predictions:
 | 60–80% | 1 | 100% |
 | 80–100% | 2 | 100% |
 
-Total AI predictions logged: 21
+Total AI predictions logged: 23
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-17 | flb | The RSM Classic: Benjamin James wins | NO | 0.95 | - | 0.05 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Blades Brown wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Ben Kohles wins | NO | 0.98 | - | 0.04 | open | - |
 | 2026-11-16 | flb | The RSM Classic: Michael Brennan wins | NO | 0.95 | - | 0.05 | open | - |
@@ -59,4 +60,3 @@ Total AI predictions logged: 21
 | 2026-11-13 | ai | Will Howard Lutnick be out as Commerce Secretary before | NO | 0.57 | 0.25 | 0.43 | open | - |
 | 2026-11-13 | flb | Will Jensen Huang testify in front of Congress before D | NO | 0.88 | - | 0.12 | open | - |
 | 2026-11-13 | flb | Hexed Rotten Tomatoes score? — Above 90 | NO | 0.95 | - | 0.06 | open | - |
-| 2026-11-13 | flb | Will BTC trimmed mean be below $57500.00 by 11:59 PM ET | NO | 0.92 | - | 0.09 | open | - |
