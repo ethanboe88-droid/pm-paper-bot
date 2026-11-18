@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-18 22:18 UTC
+# Prediction Market Paper Bot — 2026-11-18 22:37 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 25 | Cash: $99,512.93 of $100,000
-- Kalshi fees paid: $2.09 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 26 | Cash: $99,493.43 of $100,000
+- Kalshi fees paid: $2.13 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
@@ -34,12 +34,13 @@ Brier score (lower = better), 4 resolved predictions:
 | 60–80% | 1 | 100% |
 | 80–100% | 2 | 100% |
 
-Total AI predictions logged: 23
+Total AI predictions logged: 25
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-18 | flb | Benjamin James leads at the end of Round 1 | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-18 | flb | Will the Federal Reserve Hike rates by >25bps at their  | NO | 0.93 | - | 0.07 | open | - |
 | 2026-11-18 | flb | CME Group Tour Championship: Jeeno Thitikul wins | NO | 0.91 | - | 0.10 | open | - |
 | 2026-11-18 | flb | The RSM Classic: Michael Thorbjornsen wins | NO | 0.97 | - | 0.03 | open | - |
@@ -59,4 +60,3 @@ Total AI predictions logged: 23
 | 2026-11-14 | flb | Will it be confirmed that human error caused the FAA's  | NO | 0.87 | - | 0.14 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that an error by an AI system or A | NO | 0.92 | - | 0.09 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that a problem with the FAA's SMAR | NO | 0.93 | - | 0.07 | open | - |
-| 2026-11-13 | flb | Will the unemployment rate (U-3) be above 4.2% in Novem | NO | 0.91 | - | 0.10 | open | - |
