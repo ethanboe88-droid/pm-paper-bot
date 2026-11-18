@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-17 23:08 UTC
+# Prediction Market Paper Bot — 2026-11-18 04:42 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 22 | Cash: $99,571.25 of $100,000
-- Kalshi fees paid: $1.81 (included in all P&L above)
+- Settled: 0 (won 0, 0%) | Open: 23 | Cash: $99,551.80 of $100,000
+- Kalshi fees paid: $1.86 (included in all P&L above)
 
 ## Is the AI smarter than the market?
 
@@ -40,6 +40,7 @@ Total AI predictions logged: 23
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-18 | flb | The RSM Classic: Michael Thorbjornsen wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Brian Harman wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Benjamin James wins | NO | 0.95 | - | 0.05 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Blades Brown wins | NO | 0.97 | - | 0.04 | open | - |
@@ -59,4 +60,3 @@ Total AI predictions logged: 23
 | 2026-11-13 | flb | Will the unemployment rate (U-3) be above 4.2% in Novem | NO | 0.91 | - | 0.10 | open | - |
 | 2026-11-13 | ai | Will Jensen Huang talk to Trump before Dec 1, 2026? | YES | 0.42 | 0.55 | 0.40 | open | - |
 | 2026-11-13 | ai | Will Howard Lutnick be out as Commerce Secretary before | NO | 0.57 | 0.25 | 0.43 | open | - |
-| 2026-11-13 | flb | Will Jensen Huang testify in front of Congress before D | NO | 0.88 | - | 0.12 | open | - |
