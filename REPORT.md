@@ -1,12 +1,12 @@
-# Prediction Market Paper Bot — 2026-11-19 22:26 UTC
+# Prediction Market Paper Bot — 2026-11-19 22:42 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
 - Realized P&L: **$-21.11** (ROI -100.0% on $21 risked)
-- Settled: 1 (won 0, 0%) | Open: 6 | Cash: $99,854.96 of $100,000
-- Kalshi fees paid: $6.50 (included in all P&L above)
+- Settled: 1 (won 0, 0%) | Open: 8 | Cash: $99,813.20 of $100,000
+- Kalshi fees paid: $8.60 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.92** (ROI +2.4% on $39 risked)
-- Settled: 2 (won 2, 100%) | Open: 27 | Cash: $99,475.20 of $100,000
-- Kalshi fees paid: $2.28 (included in all P&L above)
+- Settled: 2 (won 2, 100%) | Open: 28 | Cash: $99,456.05 of $100,000
+- Kalshi fees paid: $2.35 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -38,12 +38,15 @@ Brier score (lower = better), 5 resolved predictions:
 | 60–80% | 1 | 100% |
 | 80–100% | 3 | 100% |
 
-Total AI predictions logged: 25
+Total AI predictions logged: 34
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-19 | flb | The RSM Classic: Maverick McNealy wins | NO | 0.95 | - | 0.05 | open | - |
+| 2026-11-19 | ai | Will CPI rise more than -0.1% in November 2026? — Above | YES | 0.41 | 0.62 | 0.41 | open | - |
+| 2026-11-19 | ai | Violent Night 2 Rotten Tomatoes score? — Above 80 | YES | 0.09 | 0.27 | 0.09 | open | - |
 | 2026-11-19 | flb | The RSM Classic: Max Greyserman wins | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-19 | flb | Jackson Koivun leads at the end of Round 1 | NO | 0.98 | - | 0.03 | won | 0.42 |
 | 2026-11-19 | flb | Will the Federal Reserve Hike rates by 0bps at their De | NO | 0.97 | - | 0.04 | open | - |
@@ -61,6 +64,3 @@ Total AI predictions logged: 25
 | 2026-11-16 | flb | Will the President sign more than 4 Executive Orders be | NO | 0.98 | - | 0.03 | open | - |
 | 2026-11-15 | flb | Will BTC trimmed mean be above $90000.00 by 11:59 PM ET | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-15 | flb | Will BTC trimmed mean be above $87500.00 by 11:59 PM ET | NO | 0.96 | - | 0.04 | open | - |
-| 2026-11-14 | flb | Will BTC trimmed mean be above $85000.00 by 11:59 PM ET | NO | 0.98 | - | 0.03 | open | - |
-| 2026-11-14 | ai | Will it be confirmed that a software or configuration e | NO | 0.40 | 0.35 | 0.61 | open | - |
-| 2026-11-14 | flb | Will it be confirmed that accidental damage to a cable, | NO | 0.92 | - | 0.09 | open | - |
