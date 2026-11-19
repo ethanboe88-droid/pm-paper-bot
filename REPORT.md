@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-19 13:52 UTC
+# Prediction Market Paper Bot — 2026-11-19 22:26 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -14,16 +14,20 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
-- Realized P&L: **$+0.00** (ROI +0.0% on $0 risked)
-- Settled: 0 (won 0, 0%) | Open: 28 | Cash: $99,454.40 of $100,000
-- Kalshi fees paid: $2.22 (included in all P&L above)
+- Realized P&L: **$+0.92** (ROI +2.4% on $39 risked)
+- Settled: 2 (won 2, 100%) | Open: 27 | Cash: $99,475.20 of $100,000
+- Kalshi fees paid: $2.28 (included in all P&L above)
+
+| Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
+|---|---|---|---|---|
+| 85–100c | 2 | 100% | 98% | +2.4% |
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 4 resolved predictions:
+Brier score (lower = better), 5 resolved predictions:
 
-- AI: **0.1003**
-- Market: **0.0614**
+- AI: **0.0805**
+- Market: **0.0497**
 - Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
@@ -32,7 +36,7 @@ Brier score (lower = better), 4 resolved predictions:
 |---|---|---|
 | 40–60% | 1 | 100% |
 | 60–80% | 1 | 100% |
-| 80–100% | 2 | 100% |
+| 80–100% | 3 | 100% |
 
 Total AI predictions logged: 25
 
@@ -40,9 +44,10 @@ Total AI predictions logged: 25
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
-| 2026-11-19 | flb | Jackson Koivun leads at the end of Round 1 | NO | 0.98 | - | 0.03 | open | - |
+| 2026-11-19 | flb | The RSM Classic: Max Greyserman wins | NO | 0.96 | - | 0.04 | open | - |
+| 2026-11-19 | flb | Jackson Koivun leads at the end of Round 1 | NO | 0.98 | - | 0.03 | won | 0.42 |
 | 2026-11-19 | flb | Will the Federal Reserve Hike rates by 0bps at their De | NO | 0.97 | - | 0.04 | open | - |
-| 2026-11-18 | flb | Benjamin James leads at the end of Round 1 | NO | 0.97 | - | 0.03 | open | - |
+| 2026-11-18 | flb | Benjamin James leads at the end of Round 1 | NO | 0.97 | - | 0.03 | won | 0.5 |
 | 2026-11-18 | flb | Will the Federal Reserve Hike rates by >25bps at their  | NO | 0.93 | - | 0.07 | open | - |
 | 2026-11-18 | flb | CME Group Tour Championship: Jeeno Thitikul wins | NO | 0.91 | - | 0.10 | open | - |
 | 2026-11-18 | flb | The RSM Classic: Michael Thorbjornsen wins | NO | 0.97 | - | 0.03 | open | - |
@@ -59,4 +64,3 @@ Total AI predictions logged: 25
 | 2026-11-14 | flb | Will BTC trimmed mean be above $85000.00 by 11:59 PM ET | NO | 0.98 | - | 0.03 | open | - |
 | 2026-11-14 | ai | Will it be confirmed that a software or configuration e | NO | 0.40 | 0.35 | 0.61 | open | - |
 | 2026-11-14 | flb | Will it be confirmed that accidental damage to a cable, | NO | 0.92 | - | 0.09 | open | - |
-| 2026-11-14 | flb | Will it be confirmed that human error caused the FAA's  | NO | 0.87 | - | 0.14 | open | - |
