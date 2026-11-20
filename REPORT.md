@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-20 21:31 UTC
+# Prediction Market Paper Bot — 2026-11-20 22:16 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.92** (ROI +2.4% on $39 risked)
-- Settled: 2 (won 2, 100%) | Open: 31 | Cash: $99,398.00 of $100,000
-- Kalshi fees paid: $2.58 (included in all P&L above)
+- Settled: 2 (won 2, 100%) | Open: 32 | Cash: $99,378.69 of $100,000
+- Kalshi fees paid: $2.70 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -38,12 +38,13 @@ Brier score (lower = better), 6 resolved predictions:
 | 60–80% | 1 | 100% |
 | 80–100% | 3 | 100% |
 
-Total AI predictions logged: 34
+Total AI predictions logged: 41
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-20 | flb | The RSM Classic: Marco Penge wins | NO | 0.91 | - | 0.09 | open | - |
 | 2026-11-20 | flb | The RSM Classic: Harris English wins | NO | 0.95 | - | 0.05 | open | - |
 | 2026-11-20 | flb | The RSM Classic: Jesper Svensson wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-20 | flb | The RSM Classic: Keith Mitchell wins | NO | 0.92 | - | 0.08 | open | - |
@@ -63,4 +64,3 @@ Total AI predictions logged: 34
 | 2026-11-17 | flb | The RSM Classic: Ben Kohles wins | NO | 0.98 | - | 0.04 | open | - |
 | 2026-11-16 | flb | The RSM Classic: Michael Brennan wins | NO | 0.95 | - | 0.05 | open | - |
 | 2026-11-16 | ai | Nitto ATP Singles Finals: Carlos Alcaraz wins | NO | 0.48 | 0.43 | 0.53 | open | - |
-| 2026-11-16 | flb | The RSM Classic: Jackson Koivun wins | NO | 0.96 | - | 0.04 | open | - |
