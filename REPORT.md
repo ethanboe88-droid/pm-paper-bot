@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-20 03:42 UTC
+# Prediction Market Paper Bot — 2026-11-20 13:34 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$+0.92** (ROI +2.4% on $39 risked)
-- Settled: 2 (won 2, 100%) | Open: 29 | Cash: $99,436.56 of $100,000
-- Kalshi fees paid: $2.46 (included in all P&L above)
+- Settled: 2 (won 2, 100%) | Open: 30 | Cash: $99,417.15 of $100,000
+- Kalshi fees paid: $2.51 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -44,6 +44,7 @@ Total AI predictions logged: 34
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-20 | flb | The RSM Classic: Jesper Svensson wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-20 | flb | The RSM Classic: Keith Mitchell wins | NO | 0.92 | - | 0.08 | open | - |
 | 2026-11-19 | flb | The RSM Classic: Maverick McNealy wins | NO | 0.95 | - | 0.05 | open | - |
 | 2026-11-19 | ai | Will CPI rise more than -0.1% in November 2026? — Above | YES | 0.41 | 0.62 | 0.41 | open | - |
@@ -63,4 +64,3 @@ Total AI predictions logged: 34
 | 2026-11-16 | ai | Nitto ATP Singles Finals: Carlos Alcaraz wins | NO | 0.48 | 0.43 | 0.53 | open | - |
 | 2026-11-16 | flb | The RSM Classic: Jackson Koivun wins | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-16 | flb | Will the President sign more than 4 Executive Orders be | NO | 0.98 | - | 0.03 | open | - |
-| 2026-11-15 | flb | Will BTC trimmed mean be above $90000.00 by 11:59 PM ET | NO | 0.97 | - | 0.04 | open | - |
