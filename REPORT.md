@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-21 02:48 UTC
+# Prediction Market Paper Bot — 2026-11-21 11:44 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -14,13 +14,13 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
-- Realized P&L: **$+0.92** (ROI +2.4% on $39 risked)
-- Settled: 2 (won 2, 100%) | Open: 33 | Cash: $99,359.30 of $100,000
-- Kalshi fees paid: $2.75 (included in all P&L above)
+- Realized P&L: **$-18.51** (ROI -31.6% on $59 risked)
+- Settled: 3 (won 2, 67%) | Open: 33 | Cash: $99,340.06 of $100,000
+- Kalshi fees paid: $2.88 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
-| 85–100c | 2 | 100% | 98% | +2.4% |
+| 85–100c | 3 | 67% | 96% | -31.6% |
 
 ## Is the AI smarter than the market?
 
@@ -44,6 +44,7 @@ Total AI predictions logged: 41
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-21 | flb | The RSM Classic: Rasmus Neergaard-Petersen wins | NO | 0.91 | - | 0.09 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Adrien Dumont De Chassart wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-20 | flb | The RSM Classic: Marco Penge wins | NO | 0.91 | - | 0.09 | open | - |
 | 2026-11-20 | flb | The RSM Classic: Harris English wins | NO | 0.95 | - | 0.05 | open | - |
@@ -63,4 +64,3 @@ Total AI predictions logged: 41
 | 2026-11-17 | flb | The RSM Classic: Benjamin James wins | NO | 0.95 | - | 0.05 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Blades Brown wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Ben Kohles wins | NO | 0.98 | - | 0.04 | open | - |
-| 2026-11-16 | flb | The RSM Classic: Michael Brennan wins | NO | 0.95 | - | 0.05 | open | - |
