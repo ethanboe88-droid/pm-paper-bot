@@ -1,12 +1,12 @@
-# Prediction Market Paper Bot — 2026-11-21 19:46 UTC
+# Prediction Market Paper Bot — 2026-11-21 20:55 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
 - Realized P&L: **$-21.11** (ROI -100.0% on $21 risked)
-- Settled: 1 (won 0, 0%) | Open: 8 | Cash: $99,813.20 of $100,000
-- Kalshi fees paid: $8.60 (included in all P&L above)
+- Settled: 1 (won 0, 0%) | Open: 9 | Cash: $99,792.33 of $100,000
+- Kalshi fees paid: $9.49 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-18.51** (ROI -31.6% on $59 risked)
-- Settled: 3 (won 2, 67%) | Open: 34 | Cash: $99,320.93 of $100,000
-- Kalshi fees paid: $2.95 (included in all P&L above)
+- Settled: 3 (won 2, 67%) | Open: 35 | Cash: $99,301.67 of $100,000
+- Kalshi fees paid: $3.01 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -38,12 +38,14 @@ Brier score (lower = better), 6 resolved predictions:
 | 60–80% | 1 | 100% |
 | 80–100% | 3 | 100% |
 
-Total AI predictions logged: 41
+Total AI predictions logged: 45
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | open | - |
+| 2026-11-21 | ai | Will the rate of CPI inflation be above 3.7% for the ye | YES | 0.37 | 0.94 | 0.36 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Rasmus Hojgaard wins | NO | 0.95 | - | 0.05 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Rasmus Neergaard-Petersen wins | NO | 0.91 | - | 0.09 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Adrien Dumont De Chassart wins | NO | 0.97 | - | 0.03 | open | - |
@@ -62,5 +64,3 @@ Total AI predictions logged: 41
 | 2026-11-18 | flb | CME Group Tour Championship: Jeeno Thitikul wins | NO | 0.91 | - | 0.10 | open | - |
 | 2026-11-18 | flb | The RSM Classic: Michael Thorbjornsen wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-17 | flb | The RSM Classic: Brian Harman wins | NO | 0.97 | - | 0.03 | open | - |
-| 2026-11-17 | flb | The RSM Classic: Benjamin James wins | NO | 0.95 | - | 0.05 | open | - |
-| 2026-11-17 | flb | The RSM Classic: Blades Brown wins | NO | 0.97 | - | 0.04 | open | - |
