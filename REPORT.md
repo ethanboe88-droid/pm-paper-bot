@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-21 20:55 UTC
+# Prediction Market Paper Bot — 2026-11-22 00:40 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,8 +15,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-18.51** (ROI -31.6% on $59 risked)
-- Settled: 3 (won 2, 67%) | Open: 35 | Cash: $99,301.67 of $100,000
-- Kalshi fees paid: $3.01 (included in all P&L above)
+- Settled: 3 (won 2, 67%) | Open: 36 | Cash: $99,282.41 of $100,000
+- Kalshi fees paid: $3.07 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -24,16 +24,17 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 6 resolved predictions:
+Brier score (lower = better), 7 resolved predictions:
 
-- AI: **0.1157**
-- Market: **0.0965**
+- AI: **0.1033**
+- Market: **0.0838**
 - Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
 
 | AI said | Count | Actually YES |
 |---|---|---|
+| 0–20% | 1 | 0% |
 | 40–60% | 2 | 100% |
 | 60–80% | 1 | 100% |
 | 80–100% | 3 | 100% |
@@ -44,6 +45,7 @@ Total AI predictions logged: 45
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-22 | flb | Will the upper bound of the federal funds rate be above | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | ai | Will the rate of CPI inflation be above 3.7% for the ye | YES | 0.37 | 0.94 | 0.36 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Rasmus Hojgaard wins | NO | 0.95 | - | 0.05 | open | - |
@@ -63,4 +65,3 @@ Total AI predictions logged: 45
 | 2026-11-18 | flb | Will the Federal Reserve Hike rates by >25bps at their  | NO | 0.93 | - | 0.07 | open | - |
 | 2026-11-18 | flb | CME Group Tour Championship: Jeeno Thitikul wins | NO | 0.91 | - | 0.10 | open | - |
 | 2026-11-18 | flb | The RSM Classic: Michael Thorbjornsen wins | NO | 0.97 | - | 0.03 | open | - |
-| 2026-11-17 | flb | The RSM Classic: Brian Harman wins | NO | 0.97 | - | 0.03 | open | - |
