@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-22 22:46 UTC
+# Prediction Market Paper Bot — 2026-11-23 03:59 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -16,8 +16,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-37.75** (ROI -48.6% on $78 risked)
-- Settled: 4 (won 2, 50%) | Open: 35 | Cash: $99,282.41 of $100,000
-- Kalshi fees paid: $3.07 (included in all P&L above)
+- Settled: 4 (won 2, 50%) | Open: 36 | Cash: $99,262.96 of $100,000
+- Kalshi fees paid: $3.12 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -25,10 +25,10 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 12 resolved predictions:
+Brier score (lower = better), 14 resolved predictions:
 
-- AI: **0.1602**
-- Market: **0.1446**
+- AI: **0.1440**
+- Market: **0.1309**
 - Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
@@ -38,8 +38,8 @@ Brier score (lower = better), 12 resolved predictions:
 | 0–20% | 4 | 25% |
 | 20–40% | 1 | 0% |
 | 40–60% | 3 | 100% |
-| 60–80% | 1 | 100% |
-| 80–100% | 3 | 100% |
+| 60–80% | 2 | 100% |
+| 80–100% | 4 | 100% |
 
 Total AI predictions logged: 47
 
@@ -47,6 +47,7 @@ Total AI predictions logged: 47
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-23 | flb | Anastasiia Hnidets wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-22 | flb | Will the upper bound of the federal funds rate be above | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | ai | Will the rate of CPI inflation be above 3.7% for the ye | YES | 0.37 | 0.94 | 0.36 | open | - |
@@ -66,4 +67,3 @@ Total AI predictions logged: 47
 | 2026-11-18 | flb | Benjamin James leads at the end of Round 1 | NO | 0.97 | - | 0.03 | won | 0.5 |
 | 2026-11-18 | flb | Will the Federal Reserve Hike rates by >25bps at their  | NO | 0.93 | - | 0.07 | open | - |
 | 2026-11-18 | flb | CME Group Tour Championship: Jeeno Thitikul wins | NO | 0.91 | - | 0.10 | lost | -19.24 |
-| 2026-11-18 | flb | The RSM Classic: Michael Thorbjornsen wins | NO | 0.97 | - | 0.03 | open | - |
