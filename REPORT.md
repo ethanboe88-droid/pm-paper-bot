@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-23 03:59 UTC
+# Prediction Market Paper Bot — 2026-11-23 15:19 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,27 +15,27 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
-- Realized P&L: **$-37.75** (ROI -48.6% on $78 risked)
-- Settled: 4 (won 2, 50%) | Open: 36 | Cash: $99,262.96 of $100,000
-- Kalshi fees paid: $3.12 (included in all P&L above)
+- Realized P&L: **$-56.46** (ROI -48.5% on $116 risked)
+- Settled: 6 (won 3, 50%) | Open: 35 | Cash: $99,262.94 of $100,000
+- Kalshi fees paid: $3.19 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
-| 85–100c | 4 | 50% | 95% | -48.6% |
+| 85–100c | 6 | 50% | 95% | -48.5% |
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 14 resolved predictions:
+Brier score (lower = better), 15 resolved predictions:
 
-- AI: **0.1440**
-- Market: **0.1309**
+- AI: **0.1933**
+- Market: **0.1811**
 - Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
 
 | AI said | Count | Actually YES |
 |---|---|---|
-| 0–20% | 4 | 25% |
+| 0–20% | 5 | 40% |
 | 20–40% | 1 | 0% |
 | 40–60% | 3 | 100% |
 | 60–80% | 2 | 100% |
@@ -47,7 +47,8 @@ Total AI predictions logged: 47
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
-| 2026-11-23 | flb | Anastasiia Hnidets wins | NO | 0.97 | - | 0.04 | open | - |
+| 2026-11-23 | flb | Will the rate of CPI inflation be above 3.8% for the ye | NO | 0.95 | - | 0.06 | open | - |
+| 2026-11-23 | flb | Anastasiia Hnidets wins | NO | 0.97 | - | 0.04 | won | 0.55 |
 | 2026-11-22 | flb | Will the upper bound of the federal funds rate be above | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | ai | Will the rate of CPI inflation be above 3.7% for the ye | YES | 0.37 | 0.94 | 0.36 | open | - |
@@ -66,4 +67,3 @@ Total AI predictions logged: 47
 | 2026-11-19 | flb | Will the Federal Reserve Hike rates by 0bps at their De | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-18 | flb | Benjamin James leads at the end of Round 1 | NO | 0.97 | - | 0.03 | won | 0.5 |
 | 2026-11-18 | flb | Will the Federal Reserve Hike rates by >25bps at their  | NO | 0.93 | - | 0.07 | open | - |
-| 2026-11-18 | flb | CME Group Tour Championship: Jeeno Thitikul wins | NO | 0.91 | - | 0.10 | lost | -19.24 |
