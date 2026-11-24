@@ -1,69 +1,69 @@
-# Prediction Market Paper Bot — 2026-11-23 15:19 UTC
+# Prediction Market Paper Bot — 2026-11-24 02:15 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
-- Realized P&L: **$-41.51** (ROI -100.0% on $42 risked)
-- Settled: 2 (won 0, 0%) | Open: 8 | Cash: $99,792.33 of $100,000
-- Kalshi fees paid: $9.49 (included in all P&L above)
+- Realized P&L: **$-15.06** (ROI -24.3% on $62 risked)
+- Settled: 3 (won 1, 33%) | Open: 8 | Cash: $99,818.12 of $100,000
+- Kalshi fees paid: $10.78 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
 | 0–15c | 1 | 0% | 14% | -100.0% |
-| 40–60c | 1 | 0% | 50% | -100.0% |
+| 40–60c | 2 | 50% | 47% | +14.8% |
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
-- Realized P&L: **$-56.46** (ROI -48.5% on $116 risked)
-- Settled: 6 (won 3, 50%) | Open: 35 | Cash: $99,262.94 of $100,000
-- Kalshi fees paid: $3.19 (included in all P&L above)
+- Realized P&L: **$-62.42** (ROI -14.0% on $445 risked)
+- Settled: 23 (won 19, 83%) | Open: 19 | Cash: $99,566.31 of $100,000
+- Kalshi fees paid: $3.29 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
-| 85–100c | 6 | 50% | 95% | -48.5% |
+| 85–100c | 23 | 83% | 96% | -14.0% |
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 15 resolved predictions:
+Brier score (lower = better), 21 resolved predictions:
 
-- AI: **0.1933**
-- Market: **0.1811**
-- Market is beating the AI so far (too few results to mean anything yet — need ~100+)
+- AI: **0.1862**
+- Market: **0.1876**
+- AI is beating the market so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
 
 | AI said | Count | Actually YES |
 |---|---|---|
-| 0–20% | 5 | 40% |
+| 0–20% | 10 | 30% |
 | 20–40% | 1 | 0% |
-| 40–60% | 3 | 100% |
+| 40–60% | 4 | 100% |
 | 60–80% | 2 | 100% |
 | 80–100% | 4 | 100% |
 
-Total AI predictions logged: 47
+Total AI predictions logged: 50
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-24 | flb | Will CPI rise more than 0.0% in November 2026? — Above  | NO | 0.93 | - | 0.07 | open | - |
+| 2026-11-24 | ai | Will CPI rise more than 0.0% in November 2026? — Above  | YES | 0.08 | 0.42 | 0.07 | open | - |
 | 2026-11-23 | flb | Will the rate of CPI inflation be above 3.8% for the ye | NO | 0.95 | - | 0.06 | open | - |
 | 2026-11-23 | flb | Anastasiia Hnidets wins | NO | 0.97 | - | 0.04 | won | 0.55 |
 | 2026-11-22 | flb | Will the upper bound of the federal funds rate be above | NO | 0.96 | - | 0.04 | open | - |
-| 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | open | - |
+| 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | won | 0.74 |
 | 2026-11-21 | ai | Will the rate of CPI inflation be above 3.7% for the ye | YES | 0.37 | 0.94 | 0.36 | open | - |
-| 2026-11-21 | flb | The RSM Classic: Rasmus Hojgaard wins | NO | 0.95 | - | 0.05 | open | - |
-| 2026-11-21 | flb | The RSM Classic: Rasmus Neergaard-Petersen wins | NO | 0.91 | - | 0.09 | open | - |
-| 2026-11-21 | flb | The RSM Classic: Adrien Dumont De Chassart wins | NO | 0.97 | - | 0.03 | open | - |
-| 2026-11-20 | flb | The RSM Classic: Marco Penge wins | NO | 0.91 | - | 0.09 | open | - |
-| 2026-11-20 | flb | The RSM Classic: Harris English wins | NO | 0.95 | - | 0.05 | open | - |
-| 2026-11-20 | flb | The RSM Classic: Jesper Svensson wins | NO | 0.97 | - | 0.03 | open | - |
-| 2026-11-20 | flb | The RSM Classic: Keith Mitchell wins | NO | 0.92 | - | 0.08 | open | - |
-| 2026-11-19 | flb | The RSM Classic: Maverick McNealy wins | NO | 0.95 | - | 0.05 | open | - |
+| 2026-11-21 | flb | The RSM Classic: Rasmus Hojgaard wins | NO | 0.95 | - | 0.05 | won | 0.87 |
+| 2026-11-21 | flb | The RSM Classic: Rasmus Neergaard-Petersen wins | NO | 0.91 | - | 0.09 | won | 1.76 |
+| 2026-11-21 | flb | The RSM Classic: Adrien Dumont De Chassart wins | NO | 0.97 | - | 0.03 | won | 0.61 |
+| 2026-11-20 | flb | The RSM Classic: Marco Penge wins | NO | 0.91 | - | 0.09 | lost | -19.31 |
+| 2026-11-20 | flb | The RSM Classic: Harris English wins | NO | 0.95 | - | 0.05 | won | 0.85 |
+| 2026-11-20 | flb | The RSM Classic: Jesper Svensson wins | NO | 0.97 | - | 0.03 | won | 0.59 |
+| 2026-11-20 | flb | The RSM Classic: Keith Mitchell wins | NO | 0.92 | - | 0.08 | won | 1.51 |
+| 2026-11-19 | flb | The RSM Classic: Maverick McNealy wins | NO | 0.95 | - | 0.05 | won | 0.85 |
 | 2026-11-19 | ai | Will CPI rise more than -0.1% in November 2026? — Above | YES | 0.41 | 0.62 | 0.41 | open | - |
 | 2026-11-19 | ai | Violent Night 2 Rotten Tomatoes score? — Above 80 | YES | 0.09 | 0.27 | 0.09 | open | - |
-| 2026-11-19 | flb | The RSM Classic: Max Greyserman wins | NO | 0.96 | - | 0.04 | open | - |
+| 2026-11-19 | flb | The RSM Classic: Max Greyserman wins | NO | 0.96 | - | 0.04 | won | 0.8 |
 | 2026-11-19 | flb | Jackson Koivun leads at the end of Round 1 | NO | 0.98 | - | 0.03 | won | 0.42 |
 | 2026-11-19 | flb | Will the Federal Reserve Hike rates by 0bps at their De | NO | 0.97 | - | 0.04 | open | - |
-| 2026-11-18 | flb | Benjamin James leads at the end of Round 1 | NO | 0.97 | - | 0.03 | won | 0.5 |
-| 2026-11-18 | flb | Will the Federal Reserve Hike rates by >25bps at their  | NO | 0.93 | - | 0.07 | open | - |
