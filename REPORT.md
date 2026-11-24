@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-24 12:55 UTC
+# Prediction Market Paper Bot — 2026-11-24 23:15 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -15,13 +15,13 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
-- Realized P&L: **$-62.42** (ROI -14.0% on $445 risked)
-- Settled: 23 (won 19, 83%) | Open: 21 | Cash: $99,527.64 of $100,000
-- Kalshi fees paid: $3.40 (included in all P&L above)
+- Realized P&L: **$-61.87** (ROI -13.3% on $465 risked)
+- Settled: 24 (won 20, 83%) | Open: 21 | Cash: $99,527.70 of $100,000
+- Kalshi fees paid: $3.54 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
-| 85–100c | 23 | 83% | 96% | -14.0% |
+| 85–100c | 24 | 83% | 96% | -13.3% |
 
 ## Is the AI smarter than the market?
 
@@ -47,7 +47,8 @@ Total AI predictions logged: 50
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
-| 2026-11-24 | flb | Gabriela Agra Amorim wins | NO | 0.97 | - | 0.04 | open | - |
+| 2026-11-24 | flb | Nicolas Villalon Valdes wins | NO | 0.90 | - | 0.11 | open | - |
+| 2026-11-24 | flb | Gabriela Agra Amorim wins | NO | 0.97 | - | 0.04 | won | 0.55 |
 | 2026-11-24 | flb | BMW Australian PGA Championship: Min Woo Lee wins | NO | 0.96 | - | 0.06 | open | - |
 | 2026-11-24 | flb | Will CPI rise more than 0.0% in November 2026? — Above  | NO | 0.93 | - | 0.07 | open | - |
 | 2026-11-24 | ai | Will CPI rise more than 0.0% in November 2026? — Above  | YES | 0.08 | 0.42 | 0.07 | open | - |
@@ -66,4 +67,3 @@ Total AI predictions logged: 50
 | 2026-11-19 | flb | The RSM Classic: Maverick McNealy wins | NO | 0.95 | - | 0.05 | won | 0.85 |
 | 2026-11-19 | ai | Will CPI rise more than -0.1% in November 2026? — Above | YES | 0.41 | 0.62 | 0.41 | open | - |
 | 2026-11-19 | ai | Violent Night 2 Rotten Tomatoes score? — Above 80 | YES | 0.09 | 0.27 | 0.09 | open | - |
-| 2026-11-19 | flb | The RSM Classic: Max Greyserman wins | NO | 0.96 | - | 0.04 | won | 0.8 |
