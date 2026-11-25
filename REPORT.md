@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-25 05:40 UTC
+# Prediction Market Paper Bot — 2026-11-25 17:36 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -17,8 +17,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-59.81** (ROI -12.3% on $485 risked)
-- Settled: 25 (won 21, 84%) | Open: 22 | Cash: $99,510.44 of $100,000
-- Kalshi fees paid: $3.68 (included in all P&L above)
+- Settled: 25 (won 21, 84%) | Open: 23 | Cash: $99,491.03 of $100,000
+- Kalshi fees paid: $3.73 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -48,6 +48,7 @@ Total AI predictions logged: 59
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-25 | flb | BMW Australian PGA Championship: Marc Leishman wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Lucas Herbert wins | NO | 0.94 | - | 0.06 | open | - |
 | 2026-11-24 | flb | BMW Australian PGA Championship: Cameron Smith wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-24 | ai | Will the rate of CPI inflation be above 3.8% for the ye | YES | 0.07 | 0.32 | 0.07 | open | - |
@@ -67,4 +68,3 @@ Total AI predictions logged: 59
 | 2026-11-21 | flb | The RSM Classic: Rasmus Neergaard-Petersen wins | NO | 0.91 | - | 0.09 | won | 1.76 |
 | 2026-11-21 | flb | The RSM Classic: Adrien Dumont De Chassart wins | NO | 0.97 | - | 0.03 | won | 0.61 |
 | 2026-11-20 | flb | The RSM Classic: Marco Penge wins | NO | 0.91 | - | 0.09 | lost | -19.31 |
-| 2026-11-20 | flb | The RSM Classic: Harris English wins | NO | 0.95 | - | 0.05 | won | 0.85 |
