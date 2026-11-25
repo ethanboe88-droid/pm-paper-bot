@@ -1,12 +1,12 @@
-# Prediction Market Paper Bot — 2026-11-25 17:36 UTC
+# Prediction Market Paper Bot — 2026-11-25 23:40 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
 - Realized P&L: **$+29.54** (ROI +23.7% on $124 risked)
-- Settled: 6 (won 3, 50%) | Open: 8 | Cash: $99,862.55 of $100,000
-- Kalshi fees paid: $13.72 (included in all P&L above)
+- Settled: 6 (won 3, 50%) | Open: 11 | Cash: $99,800.65 of $100,000
+- Kalshi fees paid: $16.13 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -17,8 +17,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-59.81** (ROI -12.3% on $485 risked)
-- Settled: 25 (won 21, 84%) | Open: 23 | Cash: $99,491.03 of $100,000
-- Kalshi fees paid: $3.73 (included in all P&L above)
+- Settled: 25 (won 21, 84%) | Open: 24 | Cash: $99,471.66 of $100,000
+- Kalshi fees paid: $3.78 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -42,12 +42,16 @@ Brier score (lower = better), 27 resolved predictions:
 | 60–80% | 2 | 100% |
 | 80–100% | 5 | 100% |
 
-Total AI predictions logged: 59
+Total AI predictions logged: 68
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-25 | flb | BMW Australian PGA Championship: Elvis Smylie wins | NO | 0.97 | - | 0.04 | open | - |
+| 2026-11-25 | ai | What will Jensen Huang say during NVIDIA GTC Washington | YES | 0.55 | 0.82 | 0.54 | open | - |
+| 2026-11-25 | ai | Jason Kubler wins | NO | 0.39 | 0.33 | 0.61 | open | - |
+| 2026-11-25 | ai | Luis Guto Miguel wins | YES | 0.33 | 0.50 | 0.33 | open | - |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Marc Leishman wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Lucas Herbert wins | NO | 0.94 | - | 0.06 | open | - |
 | 2026-11-24 | flb | BMW Australian PGA Championship: Cameron Smith wins | NO | 0.97 | - | 0.03 | open | - |
@@ -64,7 +68,3 @@ Total AI predictions logged: 59
 | 2026-11-22 | flb | Will the upper bound of the federal funds rate be above | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | won | 0.74 |
 | 2026-11-21 | ai | Will the rate of CPI inflation be above 3.7% for the ye | YES | 0.37 | 0.94 | 0.36 | open | - |
-| 2026-11-21 | flb | The RSM Classic: Rasmus Hojgaard wins | NO | 0.95 | - | 0.05 | won | 0.87 |
-| 2026-11-21 | flb | The RSM Classic: Rasmus Neergaard-Petersen wins | NO | 0.91 | - | 0.09 | won | 1.76 |
-| 2026-11-21 | flb | The RSM Classic: Adrien Dumont De Chassart wins | NO | 0.97 | - | 0.03 | won | 0.61 |
-| 2026-11-20 | flb | The RSM Classic: Marco Penge wins | NO | 0.91 | - | 0.09 | lost | -19.31 |
