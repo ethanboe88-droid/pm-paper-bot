@@ -1,12 +1,12 @@
-# Prediction Market Paper Bot — 2026-11-26 19:48 UTC
+# Prediction Market Paper Bot — 2026-11-26 23:53 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
 - Realized P&L: **$+78.64** (ROI +42.2% on $186 risked)
-- Settled: 9 (won 5, 56%) | Open: 8 | Cash: $99,911.65 of $100,000
-- Kalshi fees paid: $16.13 (included in all P&L above)
+- Settled: 9 (won 5, 56%) | Open: 10 | Cash: $99,870.97 of $100,000
+- Kalshi fees paid: $17.56 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -17,8 +17,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-59.81** (ROI -12.3% on $485 risked)
-- Settled: 25 (won 21, 84%) | Open: 27 | Cash: $99,412.54 of $100,000
-- Kalshi fees paid: $4.06 (included in all P&L above)
+- Settled: 25 (won 21, 84%) | Open: 28 | Cash: $99,392.62 of $100,000
+- Kalshi fees paid: $4.14 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -42,12 +42,15 @@ Brier score (lower = better), 32 resolved predictions:
 | 60–80% | 2 | 100% |
 | 80–100% | 6 | 100% |
 
-Total AI predictions logged: 68
+Total AI predictions logged: 76
 
 ## Last 20 trades
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-26 | flb | BMW Australian PGA Championship: Kazuma Kobori wins | NO | 0.94 | - | 0.06 | open | - |
+| 2026-11-26 | ai | Real Madrid wins | NO | 0.63 | 0.27 | 0.38 | open | - |
+| 2026-11-26 | ai | Nadia Podoroska wins | YES | 0.34 | 0.45 | 0.34 | open | - |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Haydn Barron wins | NO | 0.94 | - | 0.06 | open | - |
 | 2026-11-26 | flb | Diego Duran wins | NO | 0.90 | - | 0.10 | open | - |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Nicolai Hojgaard wins | NO | 0.97 | - | 0.04 | open | - |
@@ -65,6 +68,3 @@ Total AI predictions logged: 68
 | 2026-11-24 | flb | Gabriela Agra Amorim wins | NO | 0.97 | - | 0.04 | won | 0.55 |
 | 2026-11-24 | flb | BMW Australian PGA Championship: Min Woo Lee wins | NO | 0.96 | - | 0.06 | open | - |
 | 2026-11-24 | flb | Will CPI rise more than 0.0% in November 2026? — Above  | NO | 0.93 | - | 0.07 | open | - |
-| 2026-11-24 | ai | Will CPI rise more than 0.0% in November 2026? — Above  | YES | 0.08 | 0.42 | 0.07 | open | - |
-| 2026-11-23 | flb | Will the rate of CPI inflation be above 3.8% for the ye | NO | 0.95 | - | 0.06 | open | - |
-| 2026-11-23 | flb | Anastasiia Hnidets wins | NO | 0.97 | - | 0.04 | won | 0.55 |
