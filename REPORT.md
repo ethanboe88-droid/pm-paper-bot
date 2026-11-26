@@ -1,24 +1,24 @@
-# Prediction Market Paper Bot — 2026-11-26 01:10 UTC
+# Prediction Market Paper Bot — 2026-11-26 10:02 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
-- Realized P&L: **$+29.54** (ROI +23.7% on $124 risked)
-- Settled: 6 (won 3, 50%) | Open: 11 | Cash: $99,800.65 of $100,000
+- Realized P&L: **$+99.07** (ROI +59.7% on $166 risked)
+- Settled: 8 (won 5, 62%) | Open: 9 | Cash: $99,911.65 of $100,000
 - Kalshi fees paid: $16.13 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
 | 0–15c | 2 | 0% | 14% | -100.0% |
-| 15–40c | 1 | 100% | 29% | +239.9% |
+| 15–40c | 3 | 100% | 34% | +191.9% |
 | 40–60c | 3 | 67% | 49% | +35.2% |
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-59.81** (ROI -12.3% on $485 risked)
-- Settled: 25 (won 21, 84%) | Open: 25 | Cash: $99,452.25 of $100,000
-- Kalshi fees paid: $3.83 (included in all P&L above)
+- Settled: 25 (won 21, 84%) | Open: 26 | Cash: $99,432.31 of $100,000
+- Kalshi fees paid: $3.97 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -26,21 +26,21 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 27 resolved predictions:
+Brier score (lower = better), 30 resolved predictions:
 
-- AI: **0.1963**
-- Market: **0.1890**
-- Market is beating the AI so far (too few results to mean anything yet — need ~100+)
+- AI: **0.1893**
+- Market: **0.1990**
+- AI is beating the market so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
 
 | AI said | Count | Actually YES |
 |---|---|---|
 | 0–20% | 12 | 33% |
-| 20–40% | 3 | 0% |
-| 40–60% | 5 | 100% |
+| 20–40% | 4 | 0% |
+| 40–60% | 6 | 100% |
 | 60–80% | 2 | 100% |
-| 80–100% | 5 | 100% |
+| 80–100% | 6 | 100% |
 
 Total AI predictions logged: 68
 
@@ -48,11 +48,12 @@ Total AI predictions logged: 68
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-26 | flb | Diego Duran wins | NO | 0.90 | - | 0.10 | open | - |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Nicolai Hojgaard wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Elvis Smylie wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-25 | ai | What will Jensen Huang say during NVIDIA GTC Washington | YES | 0.55 | 0.82 | 0.54 | open | - |
-| 2026-11-25 | ai | Jason Kubler wins | NO | 0.39 | 0.33 | 0.61 | open | - |
-| 2026-11-25 | ai | Luis Guto Miguel wins | YES | 0.33 | 0.50 | 0.33 | open | - |
+| 2026-11-25 | ai | Jason Kubler wins | NO | 0.39 | 0.33 | 0.61 | won | 30.26 |
+| 2026-11-25 | ai | Luis Guto Miguel wins | YES | 0.33 | 0.50 | 0.33 | won | 39.27 |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Marc Leishman wins | NO | 0.97 | - | 0.03 | open | - |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Lucas Herbert wins | NO | 0.94 | - | 0.06 | open | - |
 | 2026-11-24 | flb | BMW Australian PGA Championship: Cameron Smith wins | NO | 0.97 | - | 0.03 | open | - |
@@ -67,4 +68,3 @@ Total AI predictions logged: 68
 | 2026-11-23 | flb | Will the rate of CPI inflation be above 3.8% for the ye | NO | 0.95 | - | 0.06 | open | - |
 | 2026-11-23 | flb | Anastasiia Hnidets wins | NO | 0.97 | - | 0.04 | won | 0.55 |
 | 2026-11-22 | flb | Will the upper bound of the federal funds rate be above | NO | 0.96 | - | 0.04 | open | - |
-| 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | won | 0.74 |
