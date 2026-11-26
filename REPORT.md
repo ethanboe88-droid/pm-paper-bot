@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-25 23:40 UTC
+# Prediction Market Paper Bot — 2026-11-26 01:10 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -17,8 +17,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-59.81** (ROI -12.3% on $485 risked)
-- Settled: 25 (won 21, 84%) | Open: 24 | Cash: $99,471.66 of $100,000
-- Kalshi fees paid: $3.78 (included in all P&L above)
+- Settled: 25 (won 21, 84%) | Open: 25 | Cash: $99,452.25 of $100,000
+- Kalshi fees paid: $3.83 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -48,6 +48,7 @@ Total AI predictions logged: 68
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-26 | flb | BMW Australian PGA Championship: Nicolai Hojgaard wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Elvis Smylie wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-25 | ai | What will Jensen Huang say during NVIDIA GTC Washington | YES | 0.55 | 0.82 | 0.54 | open | - |
 | 2026-11-25 | ai | Jason Kubler wins | NO | 0.39 | 0.33 | 0.61 | open | - |
@@ -67,4 +68,3 @@ Total AI predictions logged: 68
 | 2026-11-23 | flb | Anastasiia Hnidets wins | NO | 0.97 | - | 0.04 | won | 0.55 |
 | 2026-11-22 | flb | Will the upper bound of the federal funds rate be above | NO | 0.96 | - | 0.04 | open | - |
 | 2026-11-21 | flb | The RSM Classic: Haotong Li wins | NO | 0.96 | - | 0.04 | won | 0.74 |
-| 2026-11-21 | ai | Will the rate of CPI inflation be above 3.7% for the ye | YES | 0.37 | 0.94 | 0.36 | open | - |
