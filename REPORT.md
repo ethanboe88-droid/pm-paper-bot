@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-27 13:05 UTC
+# Prediction Market Paper Bot — 2026-11-27 22:19 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -17,8 +17,8 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
 - Realized P&L: **$-55.99** (ROI -10.7% on $524 risked)
-- Settled: 27 (won 23, 85%) | Open: 28 | Cash: $99,396.99 of $100,000
-- Kalshi fees paid: $4.32 (included in all P&L above)
+- Settled: 27 (won 23, 85%) | Open: 29 | Cash: $99,377.61 of $100,000
+- Kalshi fees paid: $4.44 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
@@ -48,6 +48,7 @@ Total AI predictions logged: 76
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-27 | flb | BMW Australian PGA Championship: Daniel Hillier wins | NO | 0.92 | - | 0.09 | open | - |
 | 2026-11-27 | flb | BMW Australian PGA Championship: Alex Noren wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-27 | flb | Aoi Ito wins | NO | 0.91 | - | 0.10 | won | 1.76 |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Kazuma Kobori wins | NO | 0.94 | - | 0.06 | open | - |
@@ -67,4 +68,3 @@ Total AI predictions logged: 76
 | 2026-11-24 | ai | Hiroki Moriya wins | NO | 0.55 | 0.25 | 0.46 | won | 15.57 |
 | 2026-11-24 | ai | Matteo Covato wins | NO | 0.28 | 0.12 | 0.72 | won | 50.11 |
 | 2026-11-24 | flb | Nicolas Villalon Valdes wins | NO | 0.90 | - | 0.11 | won | 2.06 |
-| 2026-11-24 | flb | Gabriela Agra Amorim wins | NO | 0.97 | - | 0.04 | won | 0.55 |
