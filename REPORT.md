@@ -1,4 +1,4 @@
-# Prediction Market Paper Bot — 2026-11-27 03:15 UTC
+# Prediction Market Paper Bot — 2026-11-27 13:05 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
@@ -16,20 +16,20 @@ Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
-- Realized P&L: **$-57.75** (ROI -11.4% on $505 risked)
-- Settled: 26 (won 22, 85%) | Open: 28 | Cash: $99,395.38 of $100,000
-- Kalshi fees paid: $4.27 (included in all P&L above)
+- Realized P&L: **$-55.99** (ROI -10.7% on $524 risked)
+- Settled: 27 (won 23, 85%) | Open: 28 | Cash: $99,396.99 of $100,000
+- Kalshi fees paid: $4.32 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
-| 85–100c | 26 | 85% | 95% | -11.4% |
+| 85–100c | 27 | 85% | 95% | -10.7% |
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 37 resolved predictions:
+Brier score (lower = better), 38 resolved predictions:
 
-- AI: **0.1927**
-- Market: **0.1884**
+- AI: **0.1950**
+- Market: **0.1893**
 - Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
@@ -38,7 +38,7 @@ Brier score (lower = better), 37 resolved predictions:
 |---|---|---|
 | 0–20% | 14 | 29% |
 | 20–40% | 5 | 20% |
-| 40–60% | 7 | 86% |
+| 40–60% | 8 | 75% |
 | 60–80% | 5 | 60% |
 | 80–100% | 6 | 100% |
 
@@ -48,7 +48,8 @@ Total AI predictions logged: 76
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
-| 2026-11-27 | flb | Aoi Ito wins | NO | 0.91 | - | 0.10 | open | - |
+| 2026-11-27 | flb | BMW Australian PGA Championship: Alex Noren wins | NO | 0.97 | - | 0.04 | open | - |
+| 2026-11-27 | flb | Aoi Ito wins | NO | 0.91 | - | 0.10 | won | 1.76 |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Kazuma Kobori wins | NO | 0.94 | - | 0.06 | open | - |
 | 2026-11-26 | ai | Real Madrid wins | NO | 0.63 | 0.27 | 0.38 | open | - |
 | 2026-11-26 | ai | Nadia Podoroska wins | YES | 0.34 | 0.45 | 0.34 | lost | -20.64 |
@@ -67,4 +68,3 @@ Total AI predictions logged: 76
 | 2026-11-24 | ai | Matteo Covato wins | NO | 0.28 | 0.12 | 0.72 | won | 50.11 |
 | 2026-11-24 | flb | Nicolas Villalon Valdes wins | NO | 0.90 | - | 0.11 | won | 2.06 |
 | 2026-11-24 | flb | Gabriela Agra Amorim wins | NO | 0.97 | - | 0.04 | won | 0.55 |
-| 2026-11-24 | flb | BMW Australian PGA Championship: Min Woo Lee wins | NO | 0.96 | - | 0.06 | open | - |
