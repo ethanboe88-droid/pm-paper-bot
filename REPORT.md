@@ -1,45 +1,45 @@
-# Prediction Market Paper Bot — 2026-11-26 23:53 UTC
+# Prediction Market Paper Bot — 2026-11-27 03:15 UTC
 
 Fake money. Each strategy has its own fake bankroll. Win rate above breakeven in a price bucket = edge in that bucket.
 
 ## Strategy 1: AI forecasts
 
-- Realized P&L: **$+78.64** (ROI +42.2% on $186 risked)
-- Settled: 9 (won 5, 56%) | Open: 10 | Cash: $99,870.97 of $100,000
+- Realized P&L: **$+58.00** (ROI +28.0% on $207 risked)
+- Settled: 10 (won 5, 50%) | Open: 9 | Cash: $99,870.97 of $100,000
 - Kalshi fees paid: $17.56 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
 | 0–15c | 2 | 0% | 14% | -100.0% |
-| 15–40c | 3 | 100% | 34% | +191.9% |
+| 15–40c | 4 | 75% | 35% | +119.3% |
 | 40–60c | 4 | 50% | 47% | +1.5% |
 
 ## Strategy 2: Fade the longshot (rules only, no AI)
 
-- Realized P&L: **$-59.81** (ROI -12.3% on $485 risked)
-- Settled: 25 (won 21, 84%) | Open: 28 | Cash: $99,392.62 of $100,000
-- Kalshi fees paid: $4.14 (included in all P&L above)
+- Realized P&L: **$-57.75** (ROI -11.4% on $505 risked)
+- Settled: 26 (won 22, 85%) | Open: 28 | Cash: $99,395.38 of $100,000
+- Kalshi fees paid: $4.27 (included in all P&L above)
 
 | Entry price | Trades | Win rate | Breakeven (incl. fees) | ROI |
 |---|---|---|---|---|
-| 85–100c | 25 | 84% | 95% | -12.3% |
+| 85–100c | 26 | 85% | 95% | -11.4% |
 
 ## Is the AI smarter than the market?
 
-Brier score (lower = better), 32 resolved predictions:
+Brier score (lower = better), 37 resolved predictions:
 
-- AI: **0.1908**
-- Market: **0.1914**
-- AI is beating the market so far (too few results to mean anything yet — need ~100+)
+- AI: **0.1927**
+- Market: **0.1884**
+- Market is beating the AI so far (too few results to mean anything yet — need ~100+)
 
 ### AI calibration
 
 | AI said | Count | Actually YES |
 |---|---|---|
-| 0–20% | 13 | 31% |
+| 0–20% | 14 | 29% |
 | 20–40% | 5 | 20% |
-| 40–60% | 6 | 100% |
-| 60–80% | 2 | 100% |
+| 40–60% | 7 | 86% |
+| 60–80% | 5 | 60% |
 | 80–100% | 6 | 100% |
 
 Total AI predictions logged: 76
@@ -48,11 +48,12 @@ Total AI predictions logged: 76
 
 | Date | Strat | Market | Side | Price | AI | Mkt | Status | P&L |
 |---|---|---|---|---|---|---|---|---|
+| 2026-11-27 | flb | Aoi Ito wins | NO | 0.91 | - | 0.10 | open | - |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Kazuma Kobori wins | NO | 0.94 | - | 0.06 | open | - |
 | 2026-11-26 | ai | Real Madrid wins | NO | 0.63 | 0.27 | 0.38 | open | - |
-| 2026-11-26 | ai | Nadia Podoroska wins | YES | 0.34 | 0.45 | 0.34 | open | - |
+| 2026-11-26 | ai | Nadia Podoroska wins | YES | 0.34 | 0.45 | 0.34 | lost | -20.64 |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Haydn Barron wins | NO | 0.94 | - | 0.06 | open | - |
-| 2026-11-26 | flb | Diego Duran wins | NO | 0.90 | - | 0.10 | open | - |
+| 2026-11-26 | flb | Diego Duran wins | NO | 0.90 | - | 0.10 | won | 2.06 |
 | 2026-11-26 | flb | BMW Australian PGA Championship: Nicolai Hojgaard wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-25 | flb | BMW Australian PGA Championship: Elvis Smylie wins | NO | 0.97 | - | 0.04 | open | - |
 | 2026-11-25 | ai | What will Jensen Huang say during NVIDIA GTC Washington | YES | 0.55 | 0.82 | 0.54 | open | - |
@@ -67,4 +68,3 @@ Total AI predictions logged: 76
 | 2026-11-24 | flb | Nicolas Villalon Valdes wins | NO | 0.90 | - | 0.11 | won | 2.06 |
 | 2026-11-24 | flb | Gabriela Agra Amorim wins | NO | 0.97 | - | 0.04 | won | 0.55 |
 | 2026-11-24 | flb | BMW Australian PGA Championship: Min Woo Lee wins | NO | 0.96 | - | 0.06 | open | - |
-| 2026-11-24 | flb | Will CPI rise more than 0.0% in November 2026? — Above  | NO | 0.93 | - | 0.07 | open | - |
